@@ -6,3 +6,4 @@ class Student(models.Model):
     student_email = models.TextField()
     student_mobile = models.TextField(null=True)
     created_at = models.DateTimeField(auto_now=True)
+    password= models.CharField(max_length=250) 

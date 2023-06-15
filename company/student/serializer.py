@@ -6,3 +6,6 @@ class StudentSerializer(serializers.ModelSerializer):
         model = Student
         fields = '__all__'
 
+class loginserializer(serializers.Serializer):
+    student_email=serializers.EmailField()
+    password=serializers.CharField()
